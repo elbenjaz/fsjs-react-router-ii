@@ -1,0 +1,56 @@
+@import url('https://fonts.cdnfonts.com/css/vic');
+
+:root {
+    --header-bgcolor: #164dba;
+    --header-color: #fff;
+}
+
+body {
+    position: relative;
+    font-family: 'VIC', sans-serif;
+    background-image: url("../bg.png");
+}
+
+nav {
+    position: sticky;
+    top: 0;
+    z-index: 3;
+    background-color: #164dba;
+    border: 2px #000 solid;
+    color: var(--header-color);
+}
+nav img {
+    width: 200px;
+}
+
+button:not(.btn-close), input, select, a.btn {
+    border: 2px #000 solid !important;
+}
+
+.dialog {
+    position: relative;
+    background-color: var(--header-bgcolor);
+    border-radius: 20px;
+    padding: 20px;
+    color: var(--header-color);
+    width: 200px;
+}
+.dialog:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -10px;
+    border-width: 10px;
+    border-style: solid;
+}
+.dialog b {
+    color: #ffcc00;
+}
+.dialog.dialog-left:before {
+    right: -20px;
+    border-color: transparent transparent transparent var(--header-bgcolor);
+}
+.dialog.dialog-right:before {
+    left: -20px;
+    border-color: transparent var(--header-bgcolor) transparent transparent;
+}

@@ -1,0 +1,170 @@
+:root {
+    --inactive: #fff;
+    --active: #ffcc00;
+
+    --black1: #006A6B;
+    --black2: #333;
+    --blue1: #AFCEE5;
+    --blue2: #3396CD;
+    --brown1: #BF794E;
+    --brown2: #91301D;
+    --gray1: #D2DDF0;
+    --gray2: #ADB2B4;
+    --green1: #68AE28;
+    --green2: #006359;
+    --pink1: #F7C6BD;
+    --pink2: #D08690;
+    --purple1: #CD91BE;
+    --purple2: #91308C;
+    --red1: #EF8200;
+    --red2: #E50020;
+    --white1: #f1f1f1;
+    --white2: #D3EBEA;
+    --yellow1: #FFE100;
+    --yellow2: #F9BE00;    
+}
+
+.Menu {
+    margin-bottom: 10px;
+}
+.Menu a {
+    color: var(--inactive);
+    margin: 0 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.Menu a.active {
+    color: var(--active);
+}
+
+.Pokemon .pokemon-feedback img {
+    width: 100px;
+}
+.Pokemon .pokemon-loading img {
+    width: 100px;
+    animation: spin 1.5s linear infinite;
+}
+@keyframes spin { 
+    100% { 
+        transform: rotate(360deg); 
+    } 
+}
+
+.Pokemon .pokemon-card {
+    border-radius: 20px;
+    background-color: #fff;
+    padding: 40px;
+    border: 2px #000 solid;
+    margin: 10px;
+    width: 320px;
+    height: 500px;
+    background-size: 100% 200%;
+}
+.Pokemon .pokemon-card img {
+    height: 180px;
+    filter: drop-shadow(4px 4px 10px rgba(0, 0, 0, 0.5));
+}
+.Pokemon .pokemon-card .pokemon-card-header {
+    margin: -20px;
+}
+.Pokemon .pokemon-card .pokemon-card-header img {
+    border-radius: 100%;
+    background-color: #fff;
+    width: 60px;
+    height: 60px;
+    filter: none;
+}
+
+/* pokémon color */
+.Pokemon .pokemon-card[data-color="black"] {
+    background: radial-gradient(circle, white 0%, white 50%, var(--black1) 50%, var(--black2) 100%) 0% 0% / 100% 200%;
+}
+.Pokemon .pokemon-card[data-color="blue"] {
+    background: radial-gradient(circle, white 0%, white 50%, var(--blue1) 50%, var(--blue2) 100%) 0% 0% / 100% 200%;
+}
+.Pokemon .pokemon-card[data-color="brown"] {
+    background: radial-gradient(circle, white 0%, white 50%, var(--brown1) 50%, var(--brown2) 100%) 0% 0% / 100% 200%;
+}
+.Pokemon .pokemon-card[data-color="gray"] {
+    background: radial-gradient(circle, white 0%, white 50%, var(--gray1) 50%, var(--gray2) 100%) 0% 0% / 100% 200%;
+}
+.Pokemon .pokemon-card[data-color="green"] {
+    background: radial-gradient(circle, white 0%, white 50%, var(--green1) 50%, var(--green2) 100%) 0% 0% / 100% 200%;
+}
+.Pokemon .pokemon-card[data-color="pink"] {
+    background: radial-gradient(circle, white 0%, white 50%, var(--pink1) 50%, var(--pink2) 100%) 0% 0% / 100% 200%;
+}
+.Pokemon .pokemon-card[data-color="purple"] {
+    background: radial-gradient(circle, white 0%, white 50%, var(--purple1) 50%, var(--purple2) 100%) 0% 0% / 100% 200%;
+}
+.Pokemon .pokemon-card[data-color="red"] {
+    background: radial-gradient(circle, white 0%, white 50%, var(--red1) 50%, var(--red2) 100%) 0% 0% / 100% 200%;
+}
+.Pokemon .pokemon-card[data-color="white"] {
+    background: radial-gradient(circle, white 0%, white 50%, var(--white1) 50%, var(--white2) 100%) 0% 0% / 100% 200%;
+}
+.Pokemon .pokemon-card[data-color="yellow"] {
+    background: radial-gradient(circle, white 0%, white 50%, var(--yellow1) 50%, var(--yellow2) 100%) 0% 0% / 100% 200%;
+}
+
+/* pokémon types */
+.Pokemon .pokemon-card .pokemon-card-type[data-type="bug"] {
+    background-color: var(--green2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="dark"] {
+    background-color: var(--black2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="dragon"] {
+    background-color: var(--purple2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="electric"] {
+    background-color: var(--yellow2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="fairy"] {
+    background-color: var(--pink2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="fighting"] {
+    background-color: var(--red2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="fire"] {
+    background-color: var(--red2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="flying"] {
+    background-color: var(--blue2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="ghost"] {
+    background-color: var(--gray2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="grass"] {
+    background-color: var(--green2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="ground"] {
+    background-color: var(--brown2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="ice"] {
+    background-color: var(--blue2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="normal"] {
+    background-color: var(--black2)!important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="poison"] {
+    background-color: var(--purple2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="psychic"] {
+    background-color: var(--pink2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="rock"] {
+    background-color: var(--gray2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="shadow"] {
+    background-color: var(--black2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="steel"] {
+    background-color: var(--gray2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="unknown"] {
+    background-color: var(--black2) !important;
+}
+.Pokemon .pokemon-card .pokemon-card-type[data-type="water"] {
+    background-color: var(--blue2) !important;
+}
